@@ -1,11 +1,8 @@
-import styles from './Hero.module.css'
-
+/* eslint-disable react/react-in-jsx-scope */
 const Hero = () => (
-  <form className={styles.form}>
-    <div className="container">
-      <h2 className={styles.heroTitle}>
-        As melhores vagas para tecnologia, design e artes visuais.
-      </h2>
+  <form>
+    <div>
+      <h2>As melhores vagas para tecnologia, design e artes visuais.</h2>
     </div>
   </form>
 )

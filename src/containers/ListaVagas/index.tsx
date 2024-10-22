@@ -1,9 +1,8 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useState } from 'react'
 import FormVagas from '../../components/FormVagas'
 
 import Vaga from '../../components/Vaga'
-
-import styles from './ListaVagas.module.css'
 
 type Vaga = {
   id: string
@@ -99,7 +98,7 @@ const ListaVagas = () => {
   return (
     <div>
       <FormVagas aoPesquisar={(termo: string) => setFiltro(termo)} />
-      <ul className={styles.vagas}>
+      <ul>
         {vagasFiltradas.map((vag) => (
           <Vaga
             key={vag.id}

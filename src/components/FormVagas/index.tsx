@@ -1,6 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { FormEvent, useState } from 'react'
-
-import styles from './FormVagas.module.css'
 
 type Props = {
   aoPesquisar: (termo: string) => void
@@ -15,16 +14,13 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <form className={styles.form} onSubmit={aoEnviarForm}>
+    <form onSubmit={aoEnviarForm}>
       <input
-        className={styles.campo}
         placeholder="Front-end, fullstack, node, design"
         onChange={(e) => setTermo(e.target.value)}
         type="search"
       />
-      <button className={styles.btnPesquisar} type="submit">
-        Pesquisar
-      </button>
+      <button type="submit">Pesquisar</button>
     </form>
   )
 }
