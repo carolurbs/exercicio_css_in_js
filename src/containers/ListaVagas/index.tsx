@@ -110,6 +110,7 @@ const ListaVagas = () => {
             salarioMin={vag.salarioMin}
             salarioMax={vag.salarioMax}
             requisitos={vag.requisitos}
+            href={''}
           />
         ))}
       </ListVagas>
