@@ -9,7 +9,9 @@ function App() {
       <GlobalStyle />
       <Cabecalho />
       <Hero />
-      <ListaVagas />
+      <div className="container">
+        <ListaVagas />
+      </div>
     </>
   )
 }
